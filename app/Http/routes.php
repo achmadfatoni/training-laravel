@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/halo/{parameter}/{param2}', function($parameter, $param2){
+   return 'halo ' .$parameter. ' param 2: '.$param2;
+});
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
