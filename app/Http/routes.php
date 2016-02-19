@@ -19,6 +19,7 @@ Route::get('/halo', function(){
     return view('menu.hello');
 });
 
+Route::get('biodata', 'BiodataController@index');
 /*
 |--------------------------------------------------------------------------
 | Application Routes
