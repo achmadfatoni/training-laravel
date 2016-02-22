@@ -19,8 +19,8 @@ Route::get('/halo', function(){
     return view('menu.hello');
 });
 
-Route::get('fakultas-teknik', function(){
-	return 'ini fakultas teknik ';
+Route::get('fakultas-teknik/{namaJurusan}', function($namaJurusan){
+	return 'ini fakultas teknik '. $namaJurusan;
 });
 
 Route::get('biodata', 'BiodataController@index');
