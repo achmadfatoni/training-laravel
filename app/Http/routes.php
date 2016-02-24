@@ -21,7 +21,10 @@ Route::get('/halo', function(){
 
 Route::get('fakultas-teknik', 'FakultasController@index');
 
+
 Route::get('biodata', 'BiodataController@index');
+Route::post('biodata', 'BiodataController@store');
+Route::get('biodata/create', 'BiodataController@create');
 
 
 /*
