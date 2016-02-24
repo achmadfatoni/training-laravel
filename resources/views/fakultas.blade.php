@@ -38,7 +38,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Ini view fakultas</div>
+                <div class="title">My name is {!! $name !!}</div>
             </div>
         </div>
     </body>

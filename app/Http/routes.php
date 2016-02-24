@@ -22,6 +22,8 @@ Route::get('/halo', function(){
 Route::get('fakultas-teknik', 'FakultasController@index');
 
 Route::get('biodata', 'BiodataController@index');
+
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
