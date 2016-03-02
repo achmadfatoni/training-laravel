@@ -11,17 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/halo', function(){
-    return view('menu.hello');
-});
-
-Route::get('fakultas-teknik', 'FakultasController@index');
-
-
+Route::get('/', 'BiodataController@index');
 Route::get('biodata', 'BiodataController@index');
 Route::post('biodata', 'BiodataController@store');
 Route::get('biodata/create', 'BiodataController@create');

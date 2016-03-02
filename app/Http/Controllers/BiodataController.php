@@ -8,7 +8,12 @@ use Illuminate\Http\Request;
 class BiodataController extends Controller {
 
 	public function index(){
-		return 'halo';
+		$listBiodata = Biodata::all();
+		$data = [
+			'listBiodata' => $listBiodata,
+		];
+
+		return view('biodata.index', $data);
 	}
 
 	public function create(){
@@ -16,8 +21,9 @@ class BiodataController extends Controller {
 	}
 
 	public function store(Request $requests){
+
 		Biodata::create($requests->all());
 
-		return redirect()->back();
+		return redirect('/');
 	}
 }
