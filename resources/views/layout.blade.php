@@ -5,12 +5,12 @@
     <title>Training laravel</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url('/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Bootstrap theme -->
-    <link href="/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="{{ url('/bootstrap-theme.min.css') }}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/theme.css" rel="stylesheet">
+    <link href="{{ url('/theme.css') }}" rel="stylesheet">
 
 </head>
 
@@ -44,7 +44,7 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="/jquery.min.js"></script>
-<script src="/bootstrap.min.js"></script>
-<script src="/docs.min.js"></script>
+<script src="{{ url('/jquery.min.js')}}"></script>
+<script src="{{ url('/bootstrap.min.js')}}"></script>
+<script src="{{ url('/docs.min.js')}}"></script>
 </html>
