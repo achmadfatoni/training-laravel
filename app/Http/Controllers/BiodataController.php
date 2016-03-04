@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Biodata;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class BiodataController extends Controller {
 
@@ -21,6 +22,11 @@ class BiodataController extends Controller {
 	}
 
 	public function store(Request $requests){
+		$this->validate($requests, [
+			'name' => 'required',
+			'address' => 'required',
+			'email' => 'required'
+		]);
 
 		Biodata::create($requests->all());
 

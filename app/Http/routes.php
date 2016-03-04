@@ -10,11 +10,13 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+Route::group(['middleware' => ['web']], function () {
 
-Route::get('/', 'BiodataController@index');
-Route::get('biodata', 'BiodataController@index');
-Route::post('biodata', 'BiodataController@store');
-Route::get('biodata/create', 'BiodataController@create');
+    Route::get('/', 'BiodataController@index');
+    Route::get('biodata', 'BiodataController@index');
+    Route::post('biodata', 'BiodataController@store');
+    Route::get('biodata/create', 'BiodataController@create');
+});
 
 
 /*
@@ -28,6 +30,4 @@ Route::get('biodata/create', 'BiodataController@create');
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
     //
-});
